@@ -11,7 +11,7 @@ function App() {
         <h2>Meme Generator</h2>
         <Routes>
           <Route path="/" element={<Homepage/>} />
-          <Route path="/Edit" element={<EditPage/>} />
+          <Route path="/edit" element={<EditPage/>} />
         </Routes>
       </div>
     

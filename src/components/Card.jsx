@@ -4,17 +4,18 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const MemeCard = (props) => {
-  const navigate= useNavigate();
-    return (
-<Card style={{ width: '18rem', margin:"25x" }}>
+  const navigate = useNavigate();
+  return (
+
+    <Card style={{ width: '18rem', margin: "25x" }}>
       <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.Title}</Card.Title>
-       <Button
-       onClick={(e) => navigate('/edit?url=/${props.img}')}
-       variant="primary">Edit</Button>
+        <Button
+          onClick={() => navigate(`/edit?url=${props.img}`)}
+          variant="primary">Edit</Button>
       </Card.Body>
     </Card>
-    );
+  );
 }
 export default MemeCard;
